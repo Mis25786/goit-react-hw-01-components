@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  padding: 10px 10px;
+  align-items: center;
+}
+.status {
+  display: block;
+  width: 5px;
+  height: 5px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.avatar {
+}
+.name {
+}
+.true {
+  background-color: greenyellow;
+}
+
+.false {
+  background-color: red;
+}

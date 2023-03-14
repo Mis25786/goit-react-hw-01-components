@@ -13,6 +13,9 @@
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+
+      manifest.json містить метадані, які використовуються, коли ваш веб-додаток встановлюється на
+      на мобільному пристрої або комп'ютері користувача. Дивіться https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
@@ -23,10 +26,19 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
+
+      Зверніть увагу на використання %PUBLIC_URL% у тегах вище.
+      Під час збирання він буде замінений на URL теки `public`.
+      У HTML можна посилатися лише на файли з теки `public`.
+
+      На відміну від "/favicon.ico" або "favicon.ico", "%PUBLIC_URL%/favicon.ico" буде
+      коректно працюватиме як з маршрутизацією на стороні клієнта, так і з некореневою публічною URL-адресою.
+      Дізнайтеся, як налаштувати некорневую публічну URL-адресу за допомогою `npm run build`.
+
     -->
     <title>React App</title>
 
-    <!-- Start Single Page Apps for GitHub Pages -->
+    <!-- Start Single Page Apps for GitHub Pages / Запуск односторінкових додатків для сторінок GitHub -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // MIT License
@@ -38,6 +50,18 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
+
+      // Односторінкові додатки для сторінок GitHub
+      // Ліцензія MIT
+      // https://github.com/rafgraph/spa-github-pages
+      // Цей скрипт перевіряє, чи є в рядку запиту редирект,
+      // перетворює його назад в правильний url і додає його в історію
+      // історію браузера за допомогою window.history.replaceState(...),
+      // що не призведе до того, що браузер спробує завантажити новий url.
+      // Коли односторінковий додаток завантажується далі в цьому файлі,
+      // правильна адреса буде чекати в історії браузера для
+      // односторінковий додаток прокладе відповідний маршрут.
+
       (function (l) {
         if (l.search[1] === '/') {
           var decoded = l.search
@@ -55,7 +79,7 @@
         }
       })(window.location);
     </script>
-    <!-- End Single Page Apps for GitHub Pages -->
+    <!-- End Single Page Apps for GitHub Pages / Закінчити односторінкові додатки для сторінок GitHub -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -69,6 +93,17 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
+
+      Цей HTML-файл є шаблоном.
+      Якщо ви відкриєте його безпосередньо в браузері, ви побачите порожню сторінку.
+
+      Ви можете додати до цього файлу веб-шрифти, мета-теги або аналітику.
+      На етапі збірки скрипти з пакета будуть поміщені в тег <body>.
+
+      Щоб почати розробку, запустіть `npm start` або `yarn start`.
+      Щоб створити виробничий пакет, скористайтеся `npm run build` або `yarn build`.
+
+Translated with www.DeepL.com/Translator (free version)
     -->
   </body>
 </html>
