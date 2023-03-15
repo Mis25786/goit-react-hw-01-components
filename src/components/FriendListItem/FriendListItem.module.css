@@ -1,19 +1,24 @@
 .item {
   display: flex;
-  padding: 10px 10px;
+  padding: 15px 15px;
   align-items: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 31px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 .status {
-  display: block;
-  width: 5px;
-  height: 5px;
+  margin: 0;
   padding: 10px 10px;
   border: 1px solid transparent;
   border-radius: 50%;
 }
 .avatar {
+  margin: 0;
 }
 .name {
+  margin: 0;
 }
 .true {
   background-color: greenyellow;
